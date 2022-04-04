@@ -21,7 +21,7 @@ export class Horse extends Model<Horse, HorseCreation> {
     name: string;
 
     @ApiProperty({example: 30000, description: 'Starting price'})
-    @Column({type: DataType.INTEGER, allowNull: false})
+    @Column({type: DataType.INTEGER})
     price: number;
 
     @ApiProperty({example: false, description: 'Banned or not'})

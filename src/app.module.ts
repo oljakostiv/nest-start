@@ -6,6 +6,7 @@ import {Horse} from "./horses/horses.model";
 import { RolesModule } from './roles/roles.module';
 import {Role} from "./roles/roles.model";
 import {HorseRoles} from "./roles/horse-roles.model";
+import { AuthModule } from './auth/auth.module';
 
 @Module({
     controllers: [],
@@ -29,6 +30,7 @@ import {HorseRoles} from "./roles/horse-roles.model";
         //add other:
         HorsesModule,
         RolesModule,
+        AuthModule,
     ],
 })
 export class AppModule {
